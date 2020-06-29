@@ -6,7 +6,7 @@
     <title>tienda szp</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 </head>
-<body>
+<body class="p-3 mb-2 bg-dark text-white">
     <header>
 
     </header>
@@ -45,7 +45,7 @@
                             <input type="password" class="form-control" id="passUsuario" name="passUsuario">
                         </div>
 
-                        <button type="submit" class="btn btn-primary" id="btnEnviar" name="btnEnviar">agregar</button>
+                        <button type="submit" class="btn btn-primary btn-block" id="btnEnviar" name="btnEnviar">agregar</button>
                     </form>
            </div>
            <div class="col-12 col-md-3 mt-5">
@@ -54,7 +54,7 @@
                                 <label for="cedulaBuscar">Cedula a buscar :</label>
                                 <input type="number" class="form-control" id="cedulaBuscar" name="cedulaBuscar">
                             </div> 
-                            <button type="submit" class="btn btn-danger" id="btnBuscar" name="btnBuscar">consultar</button>
+                            <button type="submit" class="btn btn-primary btn-block " id="btnBuscar" name="btnBuscar">consultar</button>
                         </form>
                     </div>
             
@@ -64,15 +64,15 @@
                                 <label for="cedulaBorrar"> cedula a borrar:</label>
                                 <input type="number" class="form-control" id="cedulaBorrar" name="cedulaBorrar">
                             </div>      
-                            <button type="submit" class="btn btn-danger" id="btnBorrar" name="btnBorrar">BORRAR</button>
+                            <button type="submit" class="btn btn-danger btn-block " id="btnBorrar" name="btnBorrar">BORRAR</button>
                         </form>
                     </div>
             
                     <div class="col-12 col-md-3 mt-5">
                         <form action="actualizarDatos.php" method="Post">
                             <div class="form-group">
-                                <label for="usuarioActualizar"> digite la cedula:</label>
-                                <input type="number" class="form-control" id="usuarioActualizar" name="usuarioActualizar">
+                                <label for="cedulaUsuario"> digite la cedula:</label>
+                                <input type="number" class="form-control" id="cedulaUsuario" name="cedulaUsuario">
                             </div>
                         </form>
                    
@@ -84,10 +84,10 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="telefonoUsuario">telefono :</label>
-                            <input type="email" class="form-control" id="telefonoUsuario" name="telefonoUsuario">
+                            <label for="passUsuario">contraseña :</label>
+                            <input type="password" class="form-control" id="passUsuario" name="passUsuario">
                         </div>
-                            <button type="submit" class="btn btn-primary" id="btnActualizar" name="btnActualizar">Actualizar</button>
+                        <button type="submit" class="btn btn-warning btn-block" id="btnactualizar" name="btnactualizar">Actualizar</button>
                     </div>
                 
                 </div>

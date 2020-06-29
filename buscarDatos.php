@@ -7,16 +7,16 @@ if (isset($_POST["btnBuscar"])){
     $cedula=$_POST["cedulaBuscar"];
    
 
-    $consulta="SELECT nombre, apellido, correo, documento, password FROM usuarios WHERE cedula='$cedula'";
+    $consulta="SELECT nombre, apellido, correo,  password FROM usuarios WHERE cedula='$cedula'";
     
-    $operacion= new BaseDatos();
+    $operacionEnBaseDeDatos= new BaseDatos();
 
-    $resulatdo=$operacion->consultarEnBaseDatos($consulta);
+    $resultado=$operacionEnBaseDeDatos->consultarEnBaseDatos($consulta);
      
     echo("<br>");
     echo("<br>");
 
-    print_r($resulatdo);
+    print_r($resultado);
 
     
 } else {

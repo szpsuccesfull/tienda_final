@@ -11,11 +11,11 @@ if (isset($_POST["btnEnviar"])){
 
     $consulta="INSERT INTO usuarios( cedula, nombre, apellido, correo, password) VALUES ('$cedula','$nombre','$apellido','$correo','$password')";
     
-    $operacion= new BaseDatos();
+    $operacionEnBaseDeDatos= new BaseDatos();
 
-    $resulatdo=$operacion->alterarBaseDatos($consulta);
+    $resultado=$operacionEnBaseDeDatos->alterarBaseDatos($consulta);
 
-    if($resulatdo){
+    if($resultado){
         echo("se enviaron los datos con exito");
     }else{
         echo("No se ha procesado la solicitud");
